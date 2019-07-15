@@ -11,9 +11,9 @@
     </div>
   <% end %>
 
+  <% # けしたい %>
   <div class="field">
-    <%= form.label :post_id %>
-    <%= form.text_field :post_id %>
+    <%= form.text_field :post_id, value: @post.id, type: "hidden" %>
   </div>
 
   <div class="field">
